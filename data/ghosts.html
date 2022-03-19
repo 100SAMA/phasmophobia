@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>鬼魂介绍</title>
+    <link rel="stylesheet" type="text/css" href="phasmophobia.css">
+</head>
+<body id = "header" style="background-color: black">
+<nav>
+    <img class="logo" src="./images/logo.png" alt="logo.png"/>
+    <ul class="menu">
+        <li>
+            <a href="../index.html">
+                <span class="label">主页</span>
+            </a>
+        </li>
+        <li>
+            <a href="ghosts.html">
+                <span class="label">鬼魂</span>
+            </a>
+        </li>
+        <li>
+            <a href="tools.html">
+                <span class="label"> 基础道具</span>
+            </a>
+        </li>
+        <li>
+            <a href="cursed_precious.html">
+                <span class="label">咒物</span>
+            </a>
+        </li>
+        <li>
+            <a href="circle.html">
+                <span class="label">溜鬼</span>
+            </a>
+        </li>
+        <li>
+            <a href="introduction.html">
+                <span class="label">作者简介</span>
+            </a>
+        </li>
+    </ul>
+    <div class="toggle">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+</nav>
+<div class="content">
+    <ul class="ghosts">
+
+        <li id="g1">
+            <h3 id="spirit" onclick="function spi(spi) {
+                    var t = document.getElementById(spi)
+                    t.style.display = (t.style.display === 'none')?'block':'none'
+                }
+                spi('spi')" style="font-size: 2rem">魂魄 spirit</h3>
+            <p id="spi" style="display: none">在魂魄没有猎杀的时候 在魂魄附近点燃圣木 魂魄会在三分钟内不开猎杀</p>
+        </li>
+        <li id="g2">
+            <h3 id="wraith" onclick="function wra(wra) {
+                    var u = document.getElementById(wra)
+                    u.style.display = (u.style.display === 'none')?'block':'none'
+                }
+                wra('wra')"  style="font-size: 2rem">魅影 wraith</h3>
+            <p id="wra" style="display: none">在魅影房间撒盐 没有绿色足印 其次魅影的穿墙只是在没有猎杀的时候才会穿墙 可以理解为换鬼房</p>
+        </li>
+
+        <li id="g3">
+            <h3 id="phatom" onclick="function pha(pha) {
+                    var a = document.getElementById(pha);
+                    a.style.display = (a.style.display === 'none')? 'block':'none'
+                }
+                pha('pha')"  style="font-size: 2rem">幻影 phatom</h3>
+            <p id="pha" style="display: none"> 幻影在灵异事件现身时拍照 会消失 但是灵异事件声音不会消失 开猎杀时 幻影会隐身两秒 出现一秒 不容易被看到</p>
+        </li>
+
+        <li id="g4" >
+            <h3 id="poltergeist" onclick="function pol(pol) {
+                var b = document.getElementById(pol);
+                b.style.display = (b.style.display === 'none')? 'block':'none'
+            }
+            pol('pol')" style="font-size: 2rem">骚灵 poltergeist</h3>
+            <p id="pol" style="display: none">骚灵是爱扔东西的鬼魂 可以同时扔很多东西 如果没有东西 骚灵也会开门进行少量互动</p>
+        </li>
+
+        <li id="g5" >
+            <h3 id="banshee" onclick="function ban(ban) {
+                var c = document.getElementById(ban);
+                c.style.display = (c.style.display === 'none')?'block':'none'
+            }
+            ban('ban')" style="font-size: 2rem">女妖 banshee</h3>
+            <p id="ban" style="display: none">女妖开猎杀只会锁定一个人杀 假如说你是被锁定的人 你不出房间 不死 女妖永远不会换目标 但是你出房间了 或者是死了 女妖才会再换目标 也可以用喇叭 听见女妖的尖叫声 是女妖自带的 但是不一定会给你尖叫声音</p>
+        </li>
+
+        <li id="g6">
+            <h3 id="jinn" onclick="function jin(jin) {
+                var d = document.getElementById(jin)
+                d.style.display = (d.style.display === 'none')?'block':'none'
+            }
+            jin('jin')" style="font-size: 2rem">巨灵 jinn</h3>
+            <p id="jin" style="display: none">巨灵在开电闸的时候会有一个从远处跑的快 近距离不快的技能 这个技能小图基本可以无视掉 只要你会遛鬼（巨灵基本不会关电闸 但是有BUG几率关）</p>
+        </li>
+
+        <li id="g7">
+            <h3 id="mare" onclick="function mare(mare_) {
+                var e = document.getElementById(mare_)
+                e.style.display = (e.style.display === 'none')?'block':'none'
+            }
+            mare('mare_')" style="font-size: 2rem">梦魇 mare</h3>
+            <p id="mare_" style="display: none">梦魇会在平均团体理智60%左右会开猎杀 如果判断是梦魇 可以打开附近所有灯光 就会让梦魇平均在1分钟左右 再次开猎杀</p>
+        </li>
+
+        <li id="g8">
+            <h3 id="revenant" onclick="function reve(reve) {
+                var f = document.getElementById(reve)
+                f.style.display = (f.style.display === 'none')?'block':'none'
+            }
+            reve('reve')" style="font-size: 2rem">亡魂 revenant</h3>
+            <p id="reve" style="display: none">亡魂有你视野的情况下 速度是最快的 而且已经是上限了 不会再加速 没有你视野情况下 速度是所有鬼里面最慢的</p>
+        </li>
+
+        <li id="g9">
+            <h3 id="shade" onclick="function shade(shade_) {
+                var g = document.getElementById(shade_)
+                g.style.display = (g.style.display === 'none')?'block':'none'
+            }
+            shade('shade_')" style="font-size: 2rem">暗影 shade</h3>
+            <p id="shade_"  style="display: none">暗影是人多情况下 基本完全不会出现任何互动的 在有人的情况下会写鬼魂笔记 会踩盐 但是其他的不会给（暗影有BUG 即使是人多的情况下 也会给互动）</p>
+        </li>
+
+        <li id="g10">
+            <h3 id="demon" onclick="function dem(dem) {
+                var h = document.getElementById(dem)
+                h.style.display = (h.style.display === 'none')?'block':'none'
+            }
+            dem('dem')" style="font-size: 2rem">恶魔 demon</h3>
+            <p id="dem" style="display: none">恶魔可以在90%就可以开启猎杀 平均会在60-70%理智之间开猎杀 如果团体理智为0 那么恶魔每次猎杀时间间隔会在30秒左右开始</p>
+        </li>
+
+        <li id="g11">
+            <h3 id="Yurei" onclick="function yur(yur) {
+                var i = document.getElementById(yur)
+                i.style.display = (i.style.display === 'none')?'block':'none'
+            }
+            yur('yur')" style="font-size: 2rem">幽灵 Yurei</h3>
+            <p id="yur" style="display: none">灵产生灵异事件或是互动 都会掉很多理智 但是只是比所有鬼产生的互动 灵异事件要掉多那么一点点 碰见幽灵可以用排除法</p>
+        </li>
+
+        <li id="g12">
+            <h3 id="oni" onclick="function onii(onii) {
+                var j = document.getElementById(onii)
+                j.style.display = (j.style.display === 'none')?'block':'none'
+            }
+            onii('onii')" style="font-size: 2rem">赤鬼 oni</h3>
+            <p id="onii" style="display: none">赤鬼是一个在人多情况下 非常爱现身的鬼 同时可以高速移动物品 如果碰上赤鬼 平均每场会出现三次或以上的灵异现身（要有队友全在的情况下）</p>
+        </li>
+
+        <li id="g13">
+            <h3 id="yokai" onclick="function yok(yok) {
+                var k = document.getElementById(yok)
+                k.style.display = (k.style.display === 'none')?'block':'none'
+            }
+            yok('yok')" style="font-size: 2rem">妖怪 yokai</h3>
+            <p id="yok" style="display: none">妖怪对声音非常敏感 直接按V B在附近说话 就可以激怒 同时妖怪是小龙虾 在溜妖怪的时候 妖怪会回头很多次 或者是直接走开</p>
+        </li>
+
+        <li id="g14">
+            <h3 id="hantu" onclick="function han(han) {
+                var l = document.getElementById(han)
+                l.style.display = (l.style.display === 'none')?'block':'none'
+            }
+            han('han')" style="font-size: 2rem">寒魔 hantu</h3>
+            <p id="han" style="display: none">寒魔在刺骨寒温的地带速度比雷魂满电还要快 但是开了电闸 出了鬼房 寒魔就不快了 而且寒魔不需要卡视野 寒魔不在鬼房不会加速（噩梦难度 寒魔必须有刺骨寒温 不会被隐藏）</p>
+        </li>
+
+        <li id="g15">
+            <h3 id="goryo" onclick="function gor(gor) {
+                var m = document.getElementById(gor)
+                m.style.display = (m.style.display === 'none')?'block':'none'
+            }
+            gor('gor')" style="font-size: 2rem">御灵 goryo</h3>
+            <p id="gor" style="display: none">御灵基本只会在鬼房 但是也会乱跑  （噩梦难度 御灵必须有点阵投影仪 不会被隐藏）御灵的点阵投影仪是只能用摄像机看到 直接肉眼看 是看不到的</p>
+        </li>
+
+        <li id="g16">
+            <h3 id="myling" onclick="function myl(myl) {
+                var n = document.getElementById(myl)
+                n.style.display = (n.style.display === 'none')?'block':'none'
+            }
+            myl('myl')" style="font-size: 2rem">鬼婴 myling</h3>
+            <p id="myl" style="display: none">鬼婴在猎杀时远的地方是听不到脚步声的 （注意离近了会有脚步声）</p>
+        </li>
+
+        <li id="g17">
+            <h3 id="onryo" onclick="function onr(onr) {
+                    var o = document.getElementById(onr)
+                    o.style.display = (o.style.display === 'none')?'block':'none'
+                }
+                onr('onr')" style="font-size: 2rem">怨灵 onryo</h3>
+            <p id="onr" style="display: none">在怨灵房间放蜡烛 怨灵不会开猎杀 而且只要蜡烛一直亮着 怨灵一直不开猎杀 （怨灵会有几率在蜡烛覆盖不到的地方开猎）（注意 在鬼房点完蜡烛 怨灵容易换鬼房）</p>
+        </li>
+
+        <li id="g18">
+            <h3 id="twins" onclick="function twi(twi) {
+                    var p = document.getElementById(twi)
+                    p.style.display = (p.style.display === 'none')?'block':'none'
+                }
+                twi('twi')" style="font-size: 2rem">孪魂 twins</h3>
+            <p id="twi" style="display: none">孪魂是双胞胎鬼 会同时或者差几秒钟产生互动 互动次数会很多 每次猎杀只会出现一只鬼 猎杀时第一波可能是弟弟 速度慢一点 第二波猎杀可能是哥哥 速度会快一点</p>
+        </li>
+
+        <li id="g19">
+            <h3 id="raiju" onclick="function rai(rai) {
+                    var q = document.getElementById(rai)
+                    q.style.display = (q.style.display === 'none')?'block':'none'
+                }
+                rai('rai')" style="font-size: 2rem">雷魂 raiju</h3>
+            <p id="rai" style="display: none">雷魂开始猎杀速度很快 吸取附近电子设备是有上限的 只要不暴露视野 雷魂速度就会那么快 不会再加</p>
+        </li>
+
+        <li id="g20">
+            <h3 id="obake" onclick="function oba(oba) {
+                    var r = document.getElementById(oba)
+                    r.style.display = (r.style.display === 'none')?'block':'none'
+                }
+                oba('oba')" style="font-size: 2rem">幻妖 obake</h3>
+            <p id="oba" style="display: none">幻妖的指纹是有几率产生六指的 但是不一定会给 可以用排除法（噩梦难度 幻妖证据必有指纹）</p>
+        </li>
+
+        <li id="g21">
+            <h3 id="mimic" onclick="function mim(mim) {
+                    var s = document.getElementById(mim)
+                    s.style.display = (s.style.display === 'none')?'block':'none'
+                }
+                mim('mim')" style="font-size: 2rem">拟魂 mimic</h3>
+            <p id="mim" style="display: none">拟魂自带灵球（注意灵球是假的）专家难度会有四个证据 噩梦难度会有三个证据</p>
+        </li>
+    </ul>
+    <footer>
+        <p>内容编辑：100大人</p>
+    </footer>
+    <table class="links">
+        <tr>
+            <td><img src="./images/douyu.png"></td>
+            <td style="font-size: 30px; padding-bottom: 20px; padding-left: 10px"><a href="https://www.douyu.com/topic/kongguizheng2?rid=9317274">100大人</a><br>房间号：9317274</td>
+        </tr>
+        <tr>
+            <td><img src="./images/bilibili.png"></td>
+            <td style="font-size: 30px; padding-bottom: 20px; padding-left: 10px"><a href="https://space.bilibili.com/18309250?spm_id_from=333.337.0.0">恐鬼症100大人</a></td>
+        </tr>
+        <tr>
+            <td><img src="./images/qq.png"></td>
+            <td style="font-size: 30px; padding-left: 10px">819607477</td>
+        </tr>
+    </table>
+    <img  class ='img' src="./images/100.gif">
+</div>
+<script src="phasmophobia.js"></script>
+
+</body>
+</html>
+
