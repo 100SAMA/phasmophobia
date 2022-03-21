@@ -251,9 +251,15 @@ body {
 #header .content .ghosts {
     position: center;
     display: table;
-    width: 1100px;
+    width: 100%;
     overflow-y: scroll;
+    padding-left: 500px;
+    padding-right: 500px;
     text-align: left;
+    background-image: url("./images/bgi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
 #header .content .ghosts h3{
     color: aliceblue;
@@ -274,9 +280,16 @@ body {
 #header .content .tools {
     position: center;
     display: table;
-    width: 1100px;
+    width: 100%;
+    padding-left: 500px;
+    padding-right: 500px;
     overflow-y: scroll;
     text-align: left;
+    background-image: url("./images/bgi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: local;
 }
 #header .content .tools li {
     position: relative;
